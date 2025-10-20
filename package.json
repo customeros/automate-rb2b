@@ -1,0 +1,24 @@
+{
+  "name": "automate-rb2b",
+  "version": "1.0.0",
+  "description": "Make RB2B data more useful by reducing noise, scoring intent and finding the right people to reach out to",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && node server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed-demo": "node backend/scripts/seedDemo.js",
+    "test-webhook": "node backend/scripts/testWebhook.js",
+    "test-linkedin": "node backend/scripts/testLinkedInSearch.js",
+    "test-email": "node backend/scripts/testEmailGeneration.js",
+    "test-verification": "node backend/scripts/testRoleVerification.js"
+  },
+  "keywords": ["rb2b", "leads", "automation"],
+  "author": "CustomerOS",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
+

@@ -1,0 +1,8 @@
+# Same as .gitignore for Cursor
+node_modules/
+backend/data/
+backend/linkedin-session/
+frontend/dist/
+*.db
+*.log
+
